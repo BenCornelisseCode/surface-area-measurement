@@ -33,9 +33,9 @@ elif device.type == "mps":
 
 from sam2.build_sam import build_sam2_video_predictor
 
-video_dir = "/home/ben/captured_frames/2025-05-20_13-29-44"
-sam2_checkpoint = "checkpoints/sam2.1_hiera_tiny.pt"
-model_cfg = "configs/sam2.1/sam2.1_hiera_t.yaml"
+video_dir = "/captured_frames/2025-05-20_13-29-44"
+sam2_checkpoint = "/checkpoints/sam2.1_hiera_tiny.pt"
+model_cfg = "sam2/configs/sam2.1/sam2.1_hiera_t.yaml"
 predictor = build_sam2_video_predictor(model_cfg, sam2_checkpoint, device=device)
 
 def show_mask(mask, ax, obj_id=None, random_color=False):

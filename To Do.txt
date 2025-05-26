@@ -1,0 +1,34 @@
+Code layout validation test
+
+1 - Calibration (ask if checkerboard calibration is needed yes or no)
+2 - Find Aruco markers and check if they can be seen
+then either have validation testing
+for validation testing - make a video for an amount of second that you can specify and store the video in a folder with name and date and the testing name > which you can specify
+
+
+
+Code layout measurements.
+1 - Ask if calibration with checkerboard is needed
+2 - Find Aruco markers and check if there are needed
+3 - Actuate the motor by moving the arm up
+4 - Start recording After a few seconds until the arm stops moving
+5 - Save this data also in a separate folder with the name and specify the: current used, height and angle of the arm and the material of the arm
+
+Code layout data segmentation routine
+1 - Load in video file with its right name
+2 - Calibrate the actual area with the aruco markers
+3 - Use sam2 model to create mask on the desired object, which you can refine and everything easily, by going to next frames and everything
+4 - Save the data: the mask results in an excel table compared to the frame / time, and the final video of the tracked mask and an mp4 file that goes with it
+
+Code data processing
+1 - Load all the folders in the results map as seperate measurements
+2 - Read the excel values for every different measurement
+3 - Plot the surface area with respect to time of every material for every current amount and vise versa
+4 - Plot the average surface area of the arm per material per position of arm
+5 - Plot
+
+Question: 
+
+- Print layers of the arm intervening with measurement?
+
+
